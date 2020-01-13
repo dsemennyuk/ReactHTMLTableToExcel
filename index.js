@@ -135,7 +135,8 @@ var ReactHTMLTableToExcel = (function(_Component) {
           var sheet = String(this.props.sheet);
           var filename = String(this.props.filename) + ".xlsx";
 
-          var uri = "data:application/vnd.ms-excel;base64,";
+          var uri = 'data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,',
+
           var template =
             '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-mic' +
             'rosoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><meta cha' +
